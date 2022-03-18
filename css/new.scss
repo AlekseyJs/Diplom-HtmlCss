@@ -1149,6 +1149,7 @@ footer{
                     left: -240px;
                     top: 200px;
                 }
+                
                 .content{
                     width: 385px;
                     height: 245px;
@@ -1196,6 +1197,11 @@ footer{
             }
             .right{
                 position: relative;
+                .cro{
+                    position: absolute;
+                    right: 0px;
+                    bottom: 0px;
+                }
                 .img{
                     width: 100%;
                     height: 370px;

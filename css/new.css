@@ -1432,6 +1432,12 @@ footer .main-footer .way {
   position: relative;
 }
 
+.Blog-firstContainer .main .top .right .cro {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
 .Blog-firstContainer .main .top .right .img {
   width: 100%;
   height: 370px;
