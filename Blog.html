@@ -11,6 +11,7 @@
     wght@400;500;600;700;800;900&family=Nunito:wght@400;500;700&family=Open+Sans:wght@400;
     600;700&family=Comforter&display=swap&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/new.css">
     <!-- font-family: 'Amatic SC', cursive;
     ont-family: 'Montserrat', sans-serif;
@@ -22,7 +23,7 @@
     <div class="wrapper">
         <header>
             <div class="top-header">
-                <div class="img">
+                <div class="img wow animate__animated animate__bounce">
                     <img src="images/vector/logo.png" alt="">
                 </div>
                 <div class="lang">
@@ -136,7 +137,7 @@
                             </ul>
                         </li>
                         <li class="item6">
-                            <a class="menu_link" href="#">О нас <span><img src="images/vector/downarrow.svg" alt=""></span></a>
+                            <a class="menu_link" href="About.html">О нас <span><img src="images/vector/downarrow.svg" alt=""></span></a>
                             <ul class="sub-menu_list">
                                 <li>
                                     <a class="menu_link" href="#">О нас</a>
@@ -248,6 +249,7 @@
         </section>
         <section class="Blog-sliderNews">
             <h2 class="bigcenter">ВАЖНЫЕ НОВОСТИ</h2>
+            <img class="cro" src="images/blog/vector/croatia.svg" alt="bg">
             <div class="slider-body swiper mySwiper bigcenter">
                 <div class="swiper-wrapper bigcenter">
                     <div class="slider-card swiper-slide">
@@ -355,6 +357,84 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="top-footer center">
+                <div class="left">
+                    <h2>ПУТЕШЕСТВУЙ С Valanta Travel Company!</h2>
+                </div>
+                <div class="right">
+                    <p>ПОДПИСЫВАЙТЕСЬ НА НАШУ РАССЫЛКУ, ЧТОБЫ ПОЛУЧАТЬ САМЫЕ ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ</p>
+                </div>
+            </div>
+            <div class="mid-footer-input center">
+                <form action="#" method="get">
+                    <input class="email" type="email" name="mail" value="Email">
+                    <label class="label">
+                       <input checked type="radio" class="radio" name="name1">
+                       <span class="fake"><img src="images/vector/radiocheck.svg" alt="check"></span>
+                       <span class="text">Я турист</span>
+                    </label>
+                    <label class="label">
+                        <input type="radio" class="radio" name="name1">
+                        <span class="fake"><img src="images/vector/radiocheck.svg" alt="check"></span>
+                        <span class="text">Я турагент</span>
+                     </label>
+                    <div class="btn">
+                        <a href="#">Отправить</a>
+                    </div>
+                </form>
+            </div>
+            <div class="main-footer">
+                <div class="footer-backgr">
+                    <img src="images/Index/footer.jpg" alt="backgr">
+                </div>
+                <div class="footer-gradient"></div>
+                <div class="footer-content">
+                    <div class="top-content center">
+                        <div class="footer-logo">
+                            <img src="images/vector/footlogo.svg" alt="logo">
+                        </div>
+                        <div class="footerMenu1">
+                            <ul>
+                                <li><a href="#">Отели</a></li>
+                                <li><a href="#">Страны</a></li>
+                                <li><a href="#">Maistra online</a></li>
+                                <li><a href="#">Туры online</a></li>
+                            </ul>
+                        </div>
+                        <div class="footerMenu2">
+                            <ul>
+                                <li><a href="#">Агентам</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Блог</a></li>
+                            </ul>
+                        </div>
+                        <div class="worktime">
+                            <span class="mode">РЕЖИМ РАБОТЫ</span>
+                            <span class="time">Пн-Пт 10:00-19:00</span>
+                        </div>
+                        <div class="contacts">
+                            <span class="phone">+38 (000) 000-00-00</span>
+                            <span class="phone">+38 (000) 000-00-00</span>
+                            <a href="#">ВСЕ КОНТАКТЫ</a>
+                        </div>
+                    </div>
+                    <div class="bot-content center">
+                        <div class="since">
+                            <span>2002-2021 Туроператор Valanta Travel Company</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://www.facebook.com"><img src="images/vector/facebook.svg" alt="facebook"></a>
+                            <a href="https://www.instagram.com"><img class="img2" src="images/vector/instagram.svg" alt="instagram"></a>
+                            <a href="https://www.youtube.com"><img src="images/vector/youtube.svg" alt="youtube"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="way">
+                    <img src="images/vector/way.svg" alt="way">
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
@@ -373,6 +453,17 @@
             prevEl: ".swiper-button-prev",
             },
         });
+    </script>
+    <script src="lib/wow.min.js"></script>
+    <script>
+        const wow = new WOW({
+            boxClass: 'wow', /* класс, который необходим для работы wow.js */
+            animateClass: 'animate__animated', /* класс, который будет автоматически добавляться анимируемым элементам при прокрутке страницы */
+            offset: 30, /* по-умолчанию установлено значение 0, то есть как только при прокрутке страницы, элемент достигает низа окна браузера проигрываться анимация, в данном случае анимация начнется на 30px выше от низа окна браузера */
+            mobile: true, /* если true, то на мобильных тоже будет анимация, если false, то на мобильных анимация отключается */
+            live: true /* если true, то анимация будет работать даже на динамически добавляемых элементах, если false, то только на тех элементах, которые были на странице при ее загрузке */
+            })
+        wow.init(); /* Инициализация плагина с установленными выше свойствами */
     </script>
     <script src="script.js"></script>
 </body>

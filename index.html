@@ -11,6 +11,7 @@
     wght@400;500;600;700;800;900&family=Nunito:wght@400;500;700&family=Open+Sans:wght@400;
     600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/new.css">
     <!-- font-family: 'Amatic SC', cursive;
     font-family: 'Montserrat', sans-serif;
@@ -21,7 +22,7 @@
     <div class="wrapper">
         <header>
             <div class="top-header">
-                <div class="img">
+                <div class="img wow animate__animated animate__bounce">
                     <img src="images/vector/logo.png" alt="">
                 </div>
                 <div class="lang">
@@ -135,7 +136,7 @@
                             </ul>
                         </li>
                         <li class="item6">
-                            <a class="menu_link" href="#">О нас <span><img src="images/vector/downarrow.svg" alt=""></span></a>
+                            <a class="menu_link" href="About.html">О нас <span><img src="images/vector/downarrow.svg" alt=""></span></a>
                             <ul class="sub-menu_list">
                                 <li>
                                     <a class="menu_link" href="#">О нас</a>
@@ -637,6 +638,16 @@
             el: ".swiper-pagination",
           },
         });
+    </script>
+    <script>
+        const wow = new WOW({
+            boxClass: 'wow', /* класс, который необходим для работы wow.js */
+            animateClass: 'animate__animated', /* класс, который будет автоматически добавляться анимируемым элементам при прокрутке страницы */
+            offset: 30, /* по-умолчанию установлено значение 0, то есть как только при прокрутке страницы, элемент достигает низа окна браузера проигрываться анимация, в данном случае анимация начнется на 30px выше от низа окна браузера */
+            mobile: true, /* если true, то на мобильных тоже будет анимация, если false, то на мобильных анимация отключается */
+            live: true /* если true, то анимация будет работать даже на динамически добавляемых элементах, если false, то только на тех элементах, которые были на странице при ее загрузке */
+            })
+        wow.init(); /* Инициализация плагина с установленными выше свойствами */
     </script>
     <script src="script.js"></script>    
 </body>

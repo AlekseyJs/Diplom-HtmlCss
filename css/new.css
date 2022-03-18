@@ -1432,12 +1432,6 @@ footer .main-footer .way {
   position: relative;
 }
 
-.Blog-firstContainer .main .top .right .cro {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-
 .Blog-firstContainer .main .top .right .img {
   width: 100%;
   height: 370px;
@@ -1594,6 +1588,12 @@ footer .main-footer .way {
   padding-bottom: 40px;
 }
 
+.Blog-sliderNews .cro {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .Blog-sliderNews .slider-body {
   display: -ms-grid;
   display: grid;
@@ -1728,5 +1728,253 @@ footer .main-footer .way {
 
 .Blog-sliderNews .slider-body .left-btn:hover {
   background-color: #c5c5c5;
+}
+
+.adoutFirstContainer p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  color: #969696;
+  padding-top: 30px;
+}
+
+.adoutFirstContainer p a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  color: #969696;
+}
+
+.adoutFirstContainer span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  color: #171717;
+}
+
+.adoutFirstContainer h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 31px;
+  line-height: 42px;
+  color: #323232;
+  font-weight: 500;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.adoutFirstContainer .main-about .text-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.adoutFirstContainer .main-about .text-about .left {
+  max-width: 586px;
+}
+
+.adoutFirstContainer .main-about .text-about .left p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4f4f4f;
+}
+
+.adoutFirstContainer .main-about .text-about .right {
+  max-width: 446px;
+  margin-left: 114px;
+}
+
+.adoutFirstContainer .main-about .text-about .right p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4f4f4f;
+}
+
+.adoutFirstContainer .main-about .premium-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 118px;
+  padding-bottom: 60px;
+}
+
+.adoutFirstContainer .main-about .premium-about .left {
+  max-width: 706px;
+}
+
+.adoutFirstContainer .main-about .premium-about .left .italic {
+  font-family: 'Comforter', cursive;
+  color: #DD4053;
+  font-size: 31px;
+  line-height: 42px;
+}
+
+.adoutFirstContainer .main-about .premium-about .left h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 31px;
+  line-height: 42px;
+  color: #323232;
+  font-weight: 500;
+  margin-top: -50px;
+}
+
+.adoutFirstContainer .main-about .premium-about .right {
+  max-width: 200px;
+  padding-top: 40px;
+  padding-left: 193px;
+}
+
+.adoutFirstContainer .main-about .premium-about .right p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: #DD4053;
+  font-weight: 500;
+}
+
+.adoutFirstContainer .main-about .premium-about .right .fat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: #DD4053;
+  font-weight: 700;
+}
+
+.adoutFirstContainer .main-about .flags-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.adoutFirstContainer .main-about .flags-about .flag-card {
+  width: 100%;
+  height: 229px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.adoutFirstContainer .main-about .flags-about .flag-card img {
+  width: 144px;
+  height: 124px;
+  margin-left: 36px;
+  position: relative;
+  z-index: 1;
+}
+
+.adoutFirstContainer .main-about .flags-about .flag-card .country {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 55px;
+  color: #232323;
+  font-weight: 600;
+  right: 40px;
+  top: 90px;
+  z-index: 1;
+}
+
+.adoutFirstContainer .main-about .flags-about .flag-card .about {
+  position: relative;
+  width: 188px;
+  height: 40px;
+  border: 1px solid #969696;
+  margin: 24px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.adoutFirstContainer .main-about .flags-about .flag-card .about a {
+  margin: 8px auto;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #969696;
+}
+
+.adoutFirstContainer .main-about .flags-about .flag-card .about:hover {
+  background-color: #969696;
+}
+
+.adoutFirstContainer .main-about .flags-about .flag-card .about:hover a {
+  color: white;
+}
+
+.adoutFirstContainer .main-about .flags-about .flag-card .backgr {
+  position: absolute;
+  z-index: 0;
+  background-color: #F8F8F8;
+  height: 185px;
+  width: 100%;
+  bottom: 0;
+}
+
+.adoutFirstContainer .main-about .info-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  padding-top: 40px;
+}
+
+.adoutFirstContainer .main-about .info-about .left-info p {
+  max-width: 529px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #323232;
+  font-weight: 500;
+  margin-top: -35px;
+}
+
+.adoutFirstContainer .main-about .info-about .left-info p a {
+  max-width: 529px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #DD4053;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.adoutFirstContainer .main-about .info-about .right-info {
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 81px;
+}
+
+.adoutFirstContainer .main-about .info-about .right-info p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #252525;
+  font-weight: 500;
+  display: inline-block;
+  padding-top: 14px;
+  padding-left: 50px;
+  padding-right: 39px;
+}
+
+.adoutFirstContainer .main-about .info-about .right-info p .fat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #252525;
+  font-weight: 700;
 }
 /*# sourceMappingURL=new.css.map */
